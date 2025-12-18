@@ -1,0 +1,171 @@
+/* Navigation */
+
+body {
+    padding-top: 70px;
+}
+
+@media (min-width: 768px) {
+    .nav-link.active {
+        border-color: white;
+    }
+
+    .nav-link:hover {
+        border-color: white;
+    }
+}
+
+.nav-link:hover {
+    color: white !important;
+
+}
+
+.navbar-nav > li > a {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+    border-bottom: solid 2px transparent;
+}
+
+/* TV Shows */
+
+#content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tvSeriesBlockContainer {
+    display: flex;
+    box-shadow: 0px 0px 6px 2px #888888;
+    width: 100%;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    overflow: hidden;
+    height: 165px;
+    position: relative;
+
+}
+
+.tvSeriesBlock {
+    transition: 0.3s ease;
+}
+
+
+.tvSeriesBlock img {
+    height: 100%;
+    width: 110px;
+}
+
+.tvSeriesDetails {
+    display: grid;
+    grid-template-rows: 1fr 2fr 4fr;
+    grid-template-areas:
+        "title"
+        "date"
+        "desc";
+    overflow: hidden;
+    margin: 8px;
+    transition: 0.3s ease;
+    user-select: none;
+}
+
+.myShowsTitle {
+    grid-area: title;
+    font-size: 15pt;
+}
+
+.myShowsDate {
+    grid-area: date;
+    font-size: 12pt;
+}
+
+.myShowsRating {
+    font-size: 16pt;
+    background: #151542;
+    color: white;
+    border-radius: 10px;
+    padding: 2px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 35px;
+    margin: 8px;
+    text-align: center;
+}
+
+.myShowsDesc {
+    grid-area: desc;
+    justify-content: center;
+    font-size: 12pt;
+}
+
+
+p {
+    margin: 0 !important;
+}
+
+.tvSeriesBlockContainer:hover > .tvSeriesDetails, .tvSeriesBlockContainer:hover > .tvSeriesBlock {
+    opacity: 0.2;
+}
+
+.tvSeriesBlockContainer:hover > .optionsContainer {
+    opacity: 0.9;
+    transition: 0.3s ease;
+}
+
+.optionsContainer {
+    position: absolute;
+    display: flex;
+    transform: translate(-50%, -50%);
+    left:50%;
+    top:50%;
+    opacity: 0;
+}
+
+.removeShow {
+    margin: 5px;
+}
+
+.moveUnwatched, .moveWatched {
+    margin: 5px;
+}
+
+
+/* Filter (Watched / Watching or Unwatched) */
+
+#filter {
+    display: flex;
+    justify-content: center;
+    color: #6b6b6b;
+    user-select: none;
+}
+
+#watched, #unwatched {
+    margin-left: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+    transition: color 0.5s;
+}
+
+.selected {
+    color: #151542;
+    border-bottom: solid 2px #151542;
+}
+
+#watched:hover, #unwatched:hover {
+    color: #151542;
+    border-bottom: solid 2px #151542;
+}
+
+/* Notifications */
+
+#notifications {
+    display: flex;
+    justify-content: center;
+}
+
+.toast {
+    position: fixed;
+    z-index: 1;
+    text-align: center;
+}

@@ -1,0 +1,38 @@
+#signInContent {
+    max-width: 400px;
+    box-shadow: 0px 0px 4px 2px #ffffff;
+    position: relative;
+    background: #ffffffef;
+}
+
+#authBtn {
+    width: 100% !important;
+}
+
+.signInHeader {
+    color: #0b0b23 !important;
+}
+
+#signInError {
+    color: #c71111;
+    text-align: center;
+}
+
+body {
+    background-image: url('projectBackground.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #0b0b23a4 !important;
+}
+
+#backBtn {
+    position: absolute;
+    top: 0;
+    left:0;
+    padding: 0px 4px;
+}
+
+.bannerLogo {
+    font-size: 25pt;
+}

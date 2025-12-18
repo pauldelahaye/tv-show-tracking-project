@@ -1,0 +1,32 @@
+.bannerLogo {
+    font-size: 40pt;
+}
+
+#signUpBtn {
+    width: 200px;
+    margin-right: 12px;
+}
+
+#signInBtn {
+    width: 200px;
+    margin-left: 12px;
+}
+
+.mainButtons {
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+#mainContent {
+    max-width: 500px;
+    background: #ffffffef;
+    color: #0b0b23;
+    box-shadow: 0px 0px 4px 2px #ffffff;
+}
+
+body {
+    background-image: url('projectBackground.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}

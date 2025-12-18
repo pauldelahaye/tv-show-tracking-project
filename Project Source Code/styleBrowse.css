@@ -1,0 +1,197 @@
+/* Navigation */
+
+body {
+    padding-top: 70px;
+}
+
+@media (min-width: 768px) {
+    .nav-link.active {
+        border-color: white;
+    }
+
+    .nav-link:hover {
+        border-color: white;
+    }
+}
+
+.nav-link:hover {
+    color: white !important;
+
+}
+
+.navbar-nav > li > a {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+    border-bottom: solid 2px transparent;
+}
+
+/* TV Shows */
+
+#content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.tvSeriesBlock {
+    width: 180px;
+    background-color: #0b0b23;
+    color: white;
+    margin: 15px;
+    box-shadow: 0px 0px 15px 8px #888888;
+    padding: 3px;
+}
+
+.imgContainer {
+    height: 260px;
+    width: 174px;
+    position: relative;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+    /* Needed for Hover Icon */
+    transition: 0.3s ease;
+}
+
+.tvSeriesDetails {
+    height: 35px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+} 
+
+h5 {
+    font-size: 10pt !important;
+    margin: 0 !important;
+}
+
+.genreBtn {
+    margin: 2px;
+    padding: 6px !important;
+}
+
+.queryBtns {
+    margin: 2px;
+    margin-bottom: 5px;
+}
+
+.contentEmpty {
+    margin-top: 10%;
+    font-weight: bold;
+}
+
+#content > h1 {
+    color: #151542;
+}
+
+/* TV Shows - Hover Icon */
+
+.imgContainer img:hover {
+    opacity: 0.2;
+    cursor: pointer;
+}
+
+.imgContainer:hover > .addToCollectionContainer {
+    opacity: 0.9;
+    transition: 0.3s ease;
+}
+
+.imgContainer:active > .addToCollectionContainer > .addToCollectionBtn > .addToCollectionIcon {
+    color: #1dfc00;
+}
+
+.imgContainer:active > .addToCollectionContainer > .addToCollectionBtn {
+    transform: translate(0%, -10%)
+}
+
+.addToCollectionContainer {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    opacity: 0; 
+    pointer-events: none;
+}
+
+.addToCollectionBtn {
+    transition: 0.1s ease;
+}
+
+.addToCollectionIcon {
+    color: #69ff55;
+    opacity: 0.8;
+    user-select: none;
+    transition: color 0.1s ease;
+}
+
+/* Pagination Buttons */
+
+.pagination {
+    margin-top: 25px;
+    bottom: 0;
+    position: relative;
+    width: 100%;
+}
+
+#nextPage, #backPage {
+    cursor: pointer;
+    user-select: none;
+    display: none;
+}
+
+#nextPage:active, #backPage:active {
+    background-color: #dddddd;
+}
+
+.nextImg {
+    margin-left: 5px;
+}
+
+.backImg {
+    margin-right: 5px;
+}
+
+/* Notifications */
+
+#notifications {
+    display: flex;
+    justify-content: center;
+}
+
+.toast {
+    position: fixed;
+    z-index: 1;
+    text-align: center;
+}
+
+
+/* TV Shows - Smaller Devices */
+
+@media (max-width: 768px) {
+
+    .tvSeriesBlock {
+        width: 120px;
+        background-color: #0b0b23;
+        color: white;
+        margin: 10px;
+        box-shadow: 0px 0px 15px 8px #888888;
+        padding: 3px;
+    }
+    
+    .imgContainer {
+        height: 170px;
+        width: 114px;
+        position: relative;
+    }
+
+    h5 {
+        font-size: 9pt !important;
+        margin: 0 !important;
+    }
+}
